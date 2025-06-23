@@ -19,12 +19,8 @@ namespace Interview_Practical_Session.Controllers
 
         // GET: api/<UsersController>  
         [HttpGet]
-        public async Task<IEnumerable<User>> Get(User user)
+        public async Task<IEnumerable<User>> Get()
         {
-            if (user == null)
-            {
-                return new List<User>();
-            }
             return await userService.GetAllAsync();
         }
 

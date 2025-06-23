@@ -22,16 +22,16 @@ namespace Interview_Practical_Session
 
         // question 3
         private string original = "AWUZABOUGI";
-        private string reversed;
+
 
         public Sorting_Arrays()
         {
-            reversed = new string(original.Reverse().ToArray());
+            original = new string(original.Reverse().ToArray());
         }
 
         // Question 4  
         public string words = "The quick brown fox jumps over the lazy dog";
-        
+
         public void ReverseWords()
         {
             string[] wordsArray = words.Split(' ');
@@ -41,8 +41,6 @@ namespace Interview_Practical_Session
         }
 
     }
-
-
 
 
 }
